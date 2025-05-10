@@ -1,0 +1,23 @@
+<html>
+  <body style="width: 100svw;">
+    <header style="background-color: rgb(69, 165, 255);">
+        <h1 style="color: white; font-size: x-large; padding: 15px;"><%= title %></h1>
+
+    </header>
+    
+    <ul>
+      <% messages.forEach(function(message) { %>
+      <li>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <p style="font-weight: bold; font-size: 22px;"><%= message.user %>:</p>
+          <p><%= message.text %></p>
+        </div>
+        <p  style="font-weight:500; color: rgb(131, 131, 131);"><%= message.added %></p>
+      </li>
+      <% }); %>
+    </ul>
+    <footer style="background-color: rgb(69, 165, 255);position: absolute; bottom: 1; width: 100svw;">
+        <h3 style="color: white; font-size: small; font-weight: 500; padding: 10px;">2025 Tous droit réserver</h3>
+    </footer>
+  </body>
+</html>
